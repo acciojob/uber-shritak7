@@ -14,6 +14,8 @@ public class Admin{
 
     private String userName;
 
+    //just
+
     private String password;
 
     public Admin() {
