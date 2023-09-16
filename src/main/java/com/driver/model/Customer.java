@@ -14,7 +14,7 @@ public class Customer{
     private String mobile;
     private String password;
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
     List<TripBooking> tripBookingList=new ArrayList<>();
 
     public List<TripBooking> getTripBookingList() {

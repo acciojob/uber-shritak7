@@ -16,10 +16,10 @@ public class Driver{
     private String password;
 
 
-    @OneToOne(mappedBy = "driver")
+    @OneToOne(mappedBy = "driver",cascade = CascadeType.ALL)
     Cab cab;
 
-    @OneToMany(mappedBy = "driver")
+    @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
     List<TripBooking>tripBookings=new ArrayList<>();
 
     public List<TripBooking> getTripBookings() {
